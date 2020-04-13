@@ -15,13 +15,19 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import {DishService} from './services/dish.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { Promotion } from './shared/promotion';
+import { PromotionService } from './services/promotion.service';
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     DishdetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,8 @@ import { FooterComponent } from './footer/footer.component';
     MatGridListModule
   ],
   providers: [
-    DishService
+    DishService,
+    PromotionService
   ],
   bootstrap: [AppComponent]
 })
