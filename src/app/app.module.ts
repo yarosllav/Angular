@@ -21,7 +21,14 @@ import { PromotionService } from './services/promotion.service';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule } from '@angular/forms'; 
 import { AboutComponent } from './about/about.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +42,11 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
+    MatFormFieldModule, 
+    MatInputModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatSlideToggleModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -44,7 +56,9 @@ import { AboutComponent } from './about/about.component';
     MatDialogModule,
     AppRoutingModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     DishService,
