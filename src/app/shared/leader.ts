@@ -1,5 +1,5 @@
 export class Leader{
-    id:string;
+    id:any;
       name: string;
       image: string;
       designation: string;
