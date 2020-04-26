@@ -17,6 +17,7 @@ import {DishService} from './services/dish.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { Promotion } from './shared/promotion';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { PromotionService } from './services/promotion.service';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
@@ -44,6 +45,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   imports: [
     MatFormFieldModule, 
     MatInputModule,
+    MatProgressSpinnerModule,
     MatCheckboxModule,
     MatSelectModule,
     MatSlideToggleModule,
